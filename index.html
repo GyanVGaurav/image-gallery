@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery | Gaurav Kumar</title>
+</head>
+<body>
+    <div class="container" style="width: 100%;background: linear-gradient(90deg,#B993D6, #FFAFBD);">
+        <h1 style="color: white;text-align: center;">Welcome Images</h1>
+    </div>
+    <div class="app" ng-app="myApp" ng-controller="myCtrl">
+        <div class="flex">
+            <img class="flex-item" ng-src={{item.urls.full}} ng-repeat="item in photos">
+        </div>
+    </div>
+
+    <footer>
+        
+    </footer>
+    <script src="./index.js"></script>
+</body>
+</html>

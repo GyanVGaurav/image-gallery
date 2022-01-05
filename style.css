@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 60px;
+    padding: 8px;
+}
+
+.app {
+    padding: 1px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex-item {
+    width: 400px;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width: 680px) {
+    .flex-item {
+        width: 100%;
+    }
+}
